@@ -1,5 +1,5 @@
 async function getWeather(location) {
-  const response = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${location}&APPID=c8d578d915427955af496a6973fe82c5`);
+  const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${location}&APPID=c8d578d915427955af496a6973fe82c5`);
   const weatherData = await response.json();
   return weatherData;
 }
@@ -56,32 +56,5 @@ function toggleTemperature(weatherObject) {
   }
 }
 
-// const weather = getWeather("London")
-// const weatherObject = weather.then((result) => {
-//   console.log(result);
-//   return weatherFactory(result)
-// })
-// console.log(weatherObject)
-
-
 buildPage("London")
-
-// const weatherObject = weather.then(weatherFactory)
-
-// <script>
-//     const img = document.querySelector('img')
-//     async function newImage(search) {
-//       try {
-//       const response = await fetch(`https://api.giphy.com/v1/gifs/random?api_key=sAxbV0GDfyE1BY5iD9LKMEpcEkPgt68M&tag=${search}`, {mode: "cors"});
-//       const gifData = await response.json();
-//       img.src = gifData.data.images.original.url;
-//       } catch {
-//         console.log("PLEASE GOD NOOOO")
-//       }
-//       return 10
-//     }
-
-
-//     newImage("cats").then(console.log)
-//   </script>
 
