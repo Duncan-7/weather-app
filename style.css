@@ -1,0 +1,39 @@
+body {
+  background-color:black;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+}
+
+#container {
+  width: 300px;
+  margin: 0 auto;
+  background-color: lightslategray;
+  height: 500px;
+  border-radius: 10px;
+  text-align: center;
+  padding: 10px 0 0 0;
+}
+
+h1 {
+  font-size: 36px;
+  margin: 0 0 20px 0;
+}
+
+#icon {
+  display: inline;
+}
+
+form {
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+#location {
+  padding: 4px 5px;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+
+
+

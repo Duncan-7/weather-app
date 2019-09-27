@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>
+    Weather App
+  </title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+<body>
+  <section id="container">
+    <h1 id="heading"></h1>
+    <div id="description">
+      
+    </div>
+    <img id="icon" src="#">
+    <div id="temp">
+      Temperature
+      <p>
+        <span id="degrees"></span><span id="scale"></span>
+      </p>
+      <button onclick="toggleTemperature(weatherObject)">Toggle °C/°F</button>
+    </div>
+    <form>
+      <label for="location">Choose a city:</label>
+      <input type="text" id="location"><br>
+      <input type="submit" onclick="buildPage(document.getElementById('location').value); return false">
+    </form>
+  </section>
+   
+
+  <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
